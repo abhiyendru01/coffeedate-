@@ -1,1 +1,144 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
+  background:url(bg.jpg) repeat scroll center center/cover;
+}
+
+#noButton {
+  position: absolute;
+  margin-left: 150px;
+  transition: 0.5s;
+  margin-top: 30px;
+}
+
+#yesButton {
+  position: absolute;
+  margin-right: 150px;
+  margin-top: 30px;
+}
+
+.header_text {
+  font-family: "Nunito";
+  font-size: 50px;
+  font-weight: bold;
+
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: #975132;
+}
+
+.text {
+  font-family: "Nunito";
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.btn {
+  background-color: #975123;
+  color: #fffae4;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
+}
+
+.btn:hover {
+  background-color: #d69f7a62;
+  border:0 0 4px #975123;
+  color: #975123;
+}
+
+.gif_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+p {
+  color: white;
+  margin-left: 50%;
+}
+p a {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 0.25;
+}
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 600px) {
+  body {
+    justify-content: flex-start;
+    padding: 20px;
+  }
+
+  .header_text {
+    font-size: 40px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    margin-top: 10px;
+    align-items: center;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    margin: 6px 0;
+  }
+
+  #noButton {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  #yesButton {
+    position: static;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 10px;
+  }
+
+  p {
+    margin-left: 0;
+    text-align: center;
+  }
+}
+footer {
+  color: #3f2013;
+  display: flex;
+  align-items: baseline;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+}
