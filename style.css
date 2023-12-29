@@ -15,9 +15,36 @@ body {
 }
 
 #yesButton {
-  position: absolute;
-  margin-right: 150px;
+  position: relative;
+  margin-right: 100px;
   margin-top: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.gif_container {
+  margin-top: 20px; 
+}
+
+.fixbtn {
+  background-color: #975123;
+  color: #fffae4;
+  font-weight: 600;
+  padding: 15px 32px;
+  text-align: center;
+  display: block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px; 
+  border: none;
+  border-radius: 12px;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 3px 3px black;
 }
 
 .header_text {
@@ -70,12 +97,6 @@ body {
   background-color: #d69f7a62;
   border:0 0 4px #975123;
   color: #975123;
-}
-
-.gif_container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 p {
   color: white;
